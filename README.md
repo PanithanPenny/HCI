@@ -1,3 +1,3 @@
 # HCI
 
-FAll 2024
+FALL 2024
