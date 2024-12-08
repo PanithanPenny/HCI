@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Floating Icon Popup Extension",
+  "version": "1.0",
+  "description": "Extension with a floating icon that opens a persistent popup window",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["icon.png", "popup.html"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

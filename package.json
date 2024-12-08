@@ -1,0 +1,16 @@
+{
+  "name": "image-processing-server",
+  "version": "1.0.0",
+  "description": "Image processing server with CORS proxy",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "multer": "^1.4.5-lts.1",
+    "cors": "^2.8.5",
+    "node-fetch": "^3.3.2"
+  }
+}

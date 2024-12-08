@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  
+  .upload-container {
+    width: 100%;
+    height: 100%; /* Fill the parent container */
+    min-height: 700px; /* Minimum height for your popup */
+    max-height: 100%; /* Prevent overflowing outside the parent */
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+    border-radius: 24px;
+    text-align: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-bottom: 24px;
+  }
+  
+  
+  
+  
+
+  .firs-line {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline-flex; /* Ensures inline layout with Flexbox */
+    align-items: center; /* Align items vertically in the center */
+    justify-content: flex-start; /* Align items to the left */
+    gap: 0px; /* Add space between the image and the heading */
+    width: 100%; /* Ensure it spans the full width */
+    text-align: left; /* Align text to the left */
+    
+  }
+  
+  .icon-logo {
+    width: 30px; /* Adjust the size of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 240px;
+  }
+  
+  .title {
+    margin-top: 15px; /* Remove default margin from the heading */
+    padding: 0; /* Remove default padding from the heading */
+  }
+  
+  
+  
+
+  .upload-container h2 {
+    font-size: 24px;
+    padding: 16px;
+    margin-bottom: 20px;
+    
+  
+  }
+  
+  .upload-area {
+    color: #555;
+    border: 2px dashed #b3b3ff;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .upload-icon img {
+    width: 96px;
+    margin-bottom: 10px;
+  }
+  
+  .upload-area p {
+    font-size: 18px;
+    margin-bottom: 4px;
+    color: #555;
+  }
+  
+  .upload-area span {
+    font-weight:700;
+    color: #615FC2;
+    cursor: pointer;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 4px;
+    background-color: #e0e0e0;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0;
+    background-color: #4a4aff;
+    transition: width 0.3s;
+  }
+  
+  #uploadedSection {
+    text-align: left;
+    margin-top: 10px;
+  }
+  
+  .upload-button {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 700 ;
+    font-size: 18px;
+    background-color: #4C4ABC;
+    color: white;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 120px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+  
+  .upload-button:disabled {
+    background-color: #ccc;
+  }
+  
+  .file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    border: 1px solid #4a4aff;
+    border-radius: 4px;
+    margin-top: 5px;
+  }
+  
+  .file-item button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #d9534f;
+    font-size: 16px;
+  }
+  
+  #imagePreviewContainer {
+    margin-top: 15px;
+    max-width: 100%;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #imagePreviewContainer img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+  }
+
+  .drag-over {
+    border-color: #4a4aff;
+    background-color: #f0f4ff;
+  }
+
+  .dropped-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.drag-over .dropped-image {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+  
+  
